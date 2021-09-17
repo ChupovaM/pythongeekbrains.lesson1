@@ -1,0 +1,13 @@
+num = int(input("Введите целое число ,больше 9 >>>"))
+a = 0
+if num < 10:
+    print("Вы ввели неверное число")
+else:
+    while num > 0:
+        b = num % 10
+        #print(b)
+        if b > a:
+            a = b
+            #print(a)
+        num = num // 10
+print(a)
