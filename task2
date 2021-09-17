@@ -1,0 +1,10 @@
+value_sec = int(input("Введите секунды >>>"))
+
+minutes = value_sec // 60
+if minutes >= 60:
+    hours = minutes // 60
+    minutes = minutes % 60
+else:
+    hours = 0
+seconds = value_sec % 60
+print("{:0>2}:{:0>2}:{:0>2}".format(hours, minutes, seconds))
