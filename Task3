@@ -1,0 +1,9 @@
+number = int(input("Введите число >>>"))
+a = number
+print(a)
+b = int('{}{}'.format(number, number))
+print(b)
+c = int('{}{}'.format(b, number))
+print(c)
+value = a + b + c
+print(value)
