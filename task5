@@ -1,0 +1,14 @@
+value = float(input("Введите выручку >>>"))
+costs = float(input("Введите издержки >>>"))
+fin_res = value - costs
+print("Прибыль =", fin_res)
+if fin_res > 0:
+    print("Выручка больше издержек")
+    rent = fin_res / value
+    print("Рентабельность =", rent)
+else:
+    print("Издержки больше выручки")
+staff = int(input("Введите численность сотрудников >>>"))
+fin_res_st = fin_res / staff
+print(fin_res_st)
+
